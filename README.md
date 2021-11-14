@@ -24,6 +24,15 @@ Copy to Github
 
 Clone repo
 
+## SSH into Cloud9
+
+1.  Open port 22 to 0.0.0.0
+2.  Paste local `id_rsa.pub`
+3.  `ssh -v ec2-user@<ipaddress>`
+
+### Port forwarding remote server
+
+`ssh –R 8081:localhost:8080 ec2-user@<ipaddress>`
 
 ## References
 
