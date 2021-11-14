@@ -32,7 +32,12 @@ Clone repo
 
 ### Port forwarding remote server
 
-`ssh –R 8081:localhost:8080 ec2-user@<ipaddress>`
+1.  Create connection
+```
+ssh -N -L 8080:127.0.0.1:8080 ec2-user@<ipaddress>
+```
+2.  Launch the remote server:  `python app.py`
+3.  open web browser on OS X laptop
 
 ## References
 
