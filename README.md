@@ -34,7 +34,7 @@ Clone repo
 
 1.  Create connection
 ```
-ssh -N -L 8080:127.0.0.1:8080 ec2-user@<ipaddress>
+ssh -N -L 8000:127.0.0.1:8000 ec2-user@<ipaddress>
 ```
 2.  Launch a remote server:  `python3 -m http.server`
 3.  open web browser on your laptop or workstation or dev environment
