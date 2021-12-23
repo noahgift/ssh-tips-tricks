@@ -26,7 +26,7 @@ Clone repo
 
 ## SSH into Cloud9
 
-1.  Open port 22 to 0.0.0.0
+1.  Open port 22 to 0.0.0.0 inside EC2 security groups
 2.  Paste local `id_rsa.pub`
 3.  `ssh -v ec2-user@<ipaddress>`
 
@@ -36,8 +36,8 @@ Clone repo
 ```
 ssh -N -L 8080:127.0.0.1:8080 ec2-user@<ipaddress>
 ```
-2.  Launch the remote server:  `python app.py`
-3.  open web browser on OS X laptop
+2.  Launch a remote server:  `python3 -m http.server`
+3.  open web browser on your laptop or workstation or dev environment
 
 ## References
 
